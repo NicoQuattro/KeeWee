@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kee Wee</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg  navbar-dark d-flex">
+        <div class="container-fluid">
+        <div>
+          <a class="navbar-brand" href="index.html">
+            <img src="/img/logotipo.png"  height="150" alt="logo">
+          </a>
+        </div>
+
+        <div class="navItems">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item navLink"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                  <li><a class="dropdown-item" href="#">Branding</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media</a></li>
+                  </ul>
+                <li class="nav-item navLink"><a class="nav-link" href="#">About</a></li>
+                <button class="btn btn-outline-success rounded-pill buttonContact" type="submit">Contact</button>
+                </ul>
+          </div>
+        </div>
+      </div>
+      </nav> 
+    </header>
+
+    <div class="tittleContainer animate__animated animate__fadeIn">
+      <h1 class="tittle ">Web Development made easy</h1>
+      <h2 class="tittle ">lets build your new website experiencie.</h2>
+    </div>
+
+    <div class="containerServicios">
+      <div class="containerServicios__Texto">
+        <h3>Services</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sit accusantium soluta deleniti? Ipsa eveniet in quia doloribus odit assumenda aut ratione ab?</p>
+      </div>
+
+      <div class="containerServicios__Cards">
+        <div class="row row-cols-1 row-cols-2 g-4">
+          <div class="col-sm- colCardLeft">
+            <div class="card ">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm- colCardRight">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Branding</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm- colCardLeft">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Apps</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm- colCardRight">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Social Media</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containerServicios">
+      <img src="img/about.PNG" alt="">
+      <div class="containerServicios__About">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos fugit aperiam necessitatibus in earum sapiente dolore officia quasi. Provident iure omnis libero laudantium vel accusamus consequatur quibusdam voluptate quo autem.</p>
+      </div>
+      
+    </div>
+
+    <div class="containerContact">
+      <div class="containerContact__text">
+        <h3>Contact</h3>
+        <p>get in touch with us</p>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col">
+
+            <div class="form-group">
+              <label for="formGroupExampleInput" class="containerContact__inputLabel">Name</label>
+              <input type="text" class="form-control" id= name required>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="containerContact__inputLabel">Email</label>
+              <input type="email" class="form-control" id= email required>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="form-group">
+            <label for="formGroupExampleInput" class="containerContact__inputLabel">Tell us about your project...</label>
+            <input type="text" class="form-control containerContact__textArea" required></input>
+          </div>
+        </div>
+      </form>
+
+      <button class="btn btn-outline-success rounded-pill buttonContact">Send</button>
+    </div>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="footerContainer__Logotipo">
+          <img src="img/logotipoFooter.png" alt="logotipo footer">
+        </div>
+        <div class="footerContainer__Menu">
+          <p class="footerTextStyle">MENU</p>
+          <ul class="itemsRedes">
+            <li> <i class="bi bi-instagram "><p class="linkFooter">Home</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">Service</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">About</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">Contact</p></i></li>
+
+          </ul>
+        </div>
+        <div class="footerContainer__Contact">
+          <p class="footerTextStyle">CONTACT</p>
+          <ul class="itemsRedes">
+            <li> <i class="bi bi-instagram"><p class="linkFooter">59 Liverpool Street, Rose Bay, Sydney</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">0449 973 257</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">Lorem@ipsum.com</p></i></li>
+          </ul>
+        </div>
+        <div class="footerContainer__Social">
+          <p class="footerTextStyle">SOCIAL</p>
+          <ul class="itemsRedes">
+            <li> <i class="bi bi-instagram"><p class="linkFooter">Instagram</p></i></li>
+            <li> <i class="bi bi-facebook"><p class="linkFooter">Facebook</p></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
