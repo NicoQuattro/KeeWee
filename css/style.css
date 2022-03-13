@@ -20,11 +20,17 @@
     background-color: #a70080;
     border: 2px solid #a70080; }
 
+.primerDegrade {
+  height: 100%;
+  background: linear-gradient(180deg, black 0%, #460265 48%, #a70080 100%); }
+
+.segundoDegrade {
+  background: linear-gradient(180deg, #a70080 0%, #460265 80%, #280F71 100%);
+  position: relative;
+  z-index: -100; }
+
 body {
-  background: black;
-  background: linear-gradient(180deg, black 0%, #460265 48%, #a7007f 100%);
-  background-attachment: fixed;
-  height: 100%; }
+  z-index: -500; }
 
 .tittleContainer {
   color: #ffffff;
@@ -41,15 +47,17 @@ body {
 
 .containerServicios {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  background-color: #000000;
+  background-color: #000000a9;
   height: 1100px;
   width: 70vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-top: 120px;
-  margin-bottom: 60px;
+  padding-bottom: 120px;
+  color: #000000;
+  position: relative;
+  z-index: -20;
   -webkit-box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49); }
   .containerServicios .containerServicios__Texto {
@@ -67,29 +75,49 @@ body {
       margin-top: 0;
       max-width: 550px; }
     .containerServicios .containerServicios__Cards .colCardRight {
-      margin-top: 60px;
+      margin-top: 65px;
       max-width: 550px; }
     .containerServicios .containerServicios__Cards .card {
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 25px;
-      padding: 0;
-      margin-top: auto;
-      margin-bottom: auto;
+      display: flex;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      max-width: 22em;
+      position: relative;
+      padding: 15% 2em;
+      box-sizing: border-box;
+      color: #FFF;
+      background: rgba(0, 0, 0, 0.692);
+      background-clip: padding-box;
+      /* importante */
+      border: solid 5px transparent;
+      /* importante */
+      border-radius: 2em;
       margin-left: 2rem;
       margin-right: 2rem;
       width: 20vw;
       height: 520px; }
+      .containerServicios .containerServicios__Cards .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+        margin: -5px;
+        /* importante */
+        border-radius: inherit;
+        /* importante */
+        background: linear-gradient(150deg, #280f71 0%, rgba(0, 0, 0, 0) 44%, rgba(163, 42, 141, 0.664) 100%); }
       .containerServicios .containerServicios__Cards .card .card-title {
         color: #ffffff;
         font-size: 40px; }
       .containerServicios .containerServicios__Cards .card .card-text {
         color: #ffffff;
         font-size: 25px; }
+      .containerServicios .containerServicios__Cards .card img {
+        width: 60px; }
   .containerServicios .containerServicios__About {
     text-align: center;
     max-width: 900px;
@@ -98,6 +126,10 @@ body {
       font-size: 30px; }
     .containerServicios .containerServicios__About p {
       font-size: 25px; }
+
+.separador {
+  width: 300px;
+  height: 180px; }
 
 .containerContact {
   display: flex;
@@ -147,7 +179,7 @@ body {
   width: 100%;
   height: 280px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around; }
   .footerContainer .footerContainer__Logotipo img {
     height: 140px; }
@@ -158,3 +190,5 @@ body {
     padding: 0; }
   .footerContainer .footerTextStyle {
     color: #a70080; }
+  .footerContainer .footerContainer__Items {
+    margin-top: 40px; }

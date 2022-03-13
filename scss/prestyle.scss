@@ -5,6 +5,7 @@
 
 $violeta: #460265;
 $magenta: #a70080;
+$azul: #280F71;
 $negro: #000000;
 $blanco: #ffffff;
 $footerColor: #dcecff;
@@ -41,15 +42,19 @@ $negroTranslucido: #0000003f;
     }
 }
 
-
-
-body{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(70,2,101,1) 48%, rgba(167,0,127,1) 100%);
-    background-attachment:fixed; //hace que no se repita el fondo
-    height:100%;
+.primerDegrade{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, $violeta 48%, $magenta 100%);
+}
+.segundoDegrade{
+    background: linear-gradient(180deg, $magenta 0%, $violeta 80%, $azul 100%);
+    position: relative;
+     z-index: -100; 
 }
 
+body{
+    z-index: -500;
+}
 .tittleContainer{ // utilizo flex para alinear el texto
     color: $blanco;
     align-items: center;
@@ -68,15 +73,18 @@ body{
 
 .containerServicios{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    background-color: $negro;
+    background-color: #000000a9;
     height: 1100px;
     width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;
-    margin-top: 120px;
-    margin-bottom: 60px;
+
+    padding-bottom: 120px;
+    color: #000000;
+    position: relative;
+    z-index: -20;
 
     -webkit-box-shadow: 0px 0px 37px 15px rgba(0,0,0,0.49); 
     box-shadow: 0px 0px 37px 15px rgba(0,0,0,0.49);
@@ -100,22 +108,38 @@ body{
             max-width: 550px;
         }
         .colCardRight{
-            margin-top: 60px;
+            margin-top: 65px;
             max-width: 550px;
 
         }
         .card{
-            background: rgba( 255, 255, 255, 0.25 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 4px );
-            -webkit-backdrop-filter: blur( 4px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            display: flex;
+            align-items: center;
+            //width: 50vw;
+            width: 90%;
+            margin: auto;
+            max-width: 22em;
 
-            border-radius: 25px;
-            padding: 0;
-            margin-top: auto ;
-            margin-bottom: auto;
+            position: relative;
+            padding: 15% 2em;
+            box-sizing: border-box;
+
+            $border: 5px;
+            color: #FFF;
+            background: rgba(0, 0, 0, 0.692);
+            background-clip: padding-box; /* importante */
+            border: solid $border transparent; /* importante */
+            border-radius: 2em;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                z-index: -10;
+                margin: -$border; /* importante */
+                border-radius: inherit; /* importante */
+                background: linear-gradient(150deg, rgba(40,15,113,1) 0%, rgba(0,0,0,0) 44%, rgba(163, 42, 141, 0.664) 100%);
+            }
 
             margin-left: 2rem;
             margin-right: 2rem;
@@ -129,11 +153,11 @@ body{
                 color:$blanco;
                 font-size: 25px;
             }
-
+            img{
+                width: 60px;
+            }
         }
-
     }
-
     .containerServicios__About{
         text-align: center;
         max-width: 900px;
@@ -145,9 +169,15 @@ body{
             font-size: 25px;
         }
     }
-
-
 }
+
+.separador{
+    width: 300px;
+    height: 180px;
+}
+
+
+
 .containerContact{
     display: flex;
     align-items: center;
@@ -205,7 +235,7 @@ body{
     width: 100%;
     height: 280px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     .footerContainer__Logotipo{
         img{
@@ -225,7 +255,9 @@ body{
 
     }
 
-
+    .footerContainer__Items{
+        margin-top: 40px;
+    }
 
 }
 
