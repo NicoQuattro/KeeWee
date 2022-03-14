@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 $violeta: #460265;
 $magenta: #a70080;
@@ -76,7 +78,7 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: #000000a9;
-    height: 1100px;
+    height: 1090px;
     width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -92,16 +94,18 @@ body{
     .containerServicios__Texto{
         margin: 20px;
         color: $blanco;
-        font-size: 30px;
+        font-size: 16px;
         text-align: center;
         max-width: 400px;
+
         h3{
-            font-size: 40px;
+            margin-bottom: 60px;
+            font-size: 48px;
         }
     }
     .containerServicios__Cards{
         display: grid;
-        margin:auto;
+        margin: auto;
 
         .colCardLeft{
             margin-top: 0;
@@ -113,9 +117,9 @@ body{
 
         }
         .card{
+            text-align: center;
             display: flex;
             align-items: center;
-            //width: 50vw;
             width: 90%;
             margin: auto;
             max-width: 22em;
@@ -147,11 +151,12 @@ body{
             height: 520px;
             .card-title{
                 color:$blanco;
-                font-size: 40px;
+                font-size: 14px;
             }
             .card-text{
+                text-align: center;
                 color:$blanco;
-                font-size: 25px;
+                font-size: 17px;
             }
             img{
                 width: 60px;
@@ -163,10 +168,14 @@ body{
         max-width: 900px;
         color: $blanco;
         h3{
-            font-size: 30px;
+            font-size: 48px;
+            margin-bottom: 60px;
         }
         p{
-            font-size: 25px;
+            padding-right: 40px;
+            margin-top: 60px;
+            text-align: left;
+            font-size: 18px;
         }
     }
 }
@@ -185,7 +194,7 @@ body{
     width: 100%;
     height: 800px;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(13,16,96,0.9920343137254902) 55%, rgba(20,18,116,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(13,16,96,0.9920343137254902) 55%, $azul 100%);
     .containerContact__text{
         margin-top: 100px;
         color: $blanco;
@@ -252,11 +261,22 @@ body{
     }
     .footerTextStyle{
         color: $magenta;
+        font-weight: bold;
 
     }
 
     .footerContainer__Items{
         margin-top: 40px;
+        .itemsRedes{
+            .linkFooter{
+                display: inline-block;
+                color: $azul;
+                font-size: 14;
+                font-weight: 500;
+                font-style: normal;
+                margin-left: 5px;
+            }
+        }
     }
 
 }
