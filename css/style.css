@@ -5,8 +5,9 @@
 
 .navbar {
   position: fixed;
-  background-color: #0000003f;
+  width: 100%;
   height: 120px;
+  background-color: #0000002c;
   padding-left: 10rem;
   padding-right: 10rem; }
   .navbar .nav-item {
@@ -28,7 +29,8 @@
 .segundoDegrade {
   background: linear-gradient(180deg, #a70080 0%, #460265 80%, #280F71 100%);
   position: relative;
-  z-index: -100; }
+  z-index: -100;
+  padding-bottom: 130px; }
 
 body {
   z-index: -500; }
@@ -50,12 +52,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #000000a9;
-  height: 1090px;
+  background-color: #000000c4;
+  height: 928px;
   width: 70vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  padding-bottom: 120px;
   color: #000000;
   position: relative;
   z-index: -20;
@@ -71,57 +72,40 @@ body {
       margin-bottom: 60px;
       font-size: 48px; }
   .containerServicios .containerServicios__Cards {
-    display: grid;
-    margin: auto; }
-    .containerServicios .containerServicios__Cards .colCardLeft {
-      margin-top: 0;
-      max-width: 550px; }
-    .containerServicios .containerServicios__Cards .colCardRight {
-      margin-top: 65px;
-      max-width: 550px; }
-    .containerServicios .containerServicios__Cards .card {
-      text-align: center;
+    display: flex;
+    flex-direction: row; }
+    .containerServicios .containerServicios__Cards .containerServicios__CardsLeft {
       display: flex;
       align-items: center;
-      width: 90%;
-      margin: auto;
-      max-width: 22em;
-      position: relative;
-      padding: 15% 2em;
-      box-sizing: border-box;
-      color: #FFF;
-      background: rgba(0, 0, 0, 0.692);
-      background-clip: padding-box;
-      /* importante */
-      border: solid 5px transparent;
-      /* importante */
-      border-radius: 2em;
-      margin-left: 2rem;
-      margin-right: 2rem;
-      width: 20vw;
-      height: 520px; }
-      .containerServicios .containerServicios__Cards .card:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -10;
-        margin: -5px;
-        /* importante */
-        border-radius: inherit;
-        /* importante */
-        background: linear-gradient(150deg, #280f71 0%, rgba(0, 0, 0, 0) 44%, rgba(163, 42, 141, 0.664) 100%); }
-      .containerServicios .containerServicios__Cards .card .card-title {
-        color: #ffffff;
-        font-size: 14px; }
-      .containerServicios .containerServicios__Cards .card .card-text {
-        text-align: center;
-        color: #ffffff;
-        font-size: 17px; }
-      .containerServicios .containerServicios__Cards .card img {
-        width: 60px; }
+      flex-direction: column;
+      margin-right: 37px;
+      margin-top: -48px; }
+    .containerServicios .containerServicios__Cards .containerServicios__CardsRight {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 4vw;
+      margin-top: 112px; }
+  .containerServicios .customCard {
+    background-image: url(../img/services.svg);
+    backdrop-filter: blur(8px);
+    width: 270px;
+    height: 416px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    margin-top: 32px; }
+    .containerServicios .customCard img {
+      width: 50px; }
+    .containerServicios .customCard .customCard__Tittle {
+      font-size: 14px; }
+    .containerServicios .customCard p {
+      font-size: 17px; }
+  .containerServicios .customCard:hover {
+    background-image: url(../img/servicesHover.svg); }
   .containerServicios .containerServicios__About {
     text-align: center;
     max-width: 900px;
@@ -165,8 +149,8 @@ body {
     width: 1200px; }
   .containerContact input {
     color: #ffffff;
-    background-color: #0000003f;
-    border: #0000003f;
+    background-color: #0000002c;
+    border: #0000002c;
     border-bottom: 4px solid #ffffff;
     border-radius: 10px 10px 0 0; }
   .containerContact input:hover {

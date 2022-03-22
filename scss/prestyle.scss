@@ -11,7 +11,7 @@ $azul: #280F71;
 $negro: #000000;
 $blanco: #ffffff;
 $footerColor: #dcecff;
-$negroTranslucido: #0000003f;
+$negroTranslucido: #0000002c;
 
 @mixin styleButton {
     border: 2px solid $magenta;
@@ -24,9 +24,10 @@ $negroTranslucido: #0000003f;
 
 .navbar{
     position: fixed;
+    width: 100%;
+    height: 120px;
 
     background-color: $negroTranslucido;
-    height: 120px;
     padding-left: 10rem;
     padding-right: 10rem;
     .nav-item{
@@ -52,6 +53,7 @@ $negroTranslucido: #0000003f;
     background: linear-gradient(180deg, $magenta 0%, $violeta 80%, $azul 100%);
     position: relative;
      z-index: -100; 
+     padding-bottom: 130px;
 }
 
 body{
@@ -77,13 +79,12 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000000a9;
-    height: 1090px;
+    background-color: #000000c4;
+    height: 928px;
     width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;
 
-    padding-bottom: 120px;
     color: #000000;
     position: relative;
     z-index: -20;
@@ -103,66 +104,56 @@ body{
             font-size: 48px;
         }
     }
+
     .containerServicios__Cards{
-        display: grid;
-        margin: auto;
+        display: flex;
+        flex-direction: row;
 
-        .colCardLeft{
-            margin-top: 0;
-            max-width: 550px;
+            .containerServicios__CardsLeft{
+                display: flex; 
+                align-items: center;
+                flex-direction: column;
+                margin-right: 37px;
+                margin-top: -48px;
+            }
+            .containerServicios__CardsRight{
+                display: flex; 
+                align-items: center;
+                flex-direction: column;
+                margin-right: 4vw;
+                margin-top: 112px;
+            }
+    }
+
+
+    .customCard{
+        background-image: url(../img/services.svg);
+        backdrop-filter: blur(8px);
+        width: 270px;
+        height: 416px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        color: $blanco;
+
+        margin-top: 32px;
+
+        img{
+            width: 50px;
         }
-        .colCardRight{
-            margin-top: 65px;
-            max-width: 550px;
-
+        .customCard__Tittle{
+            font-size: 14px;
         }
-        .card{
-            text-align: center;
-            display: flex;
-            align-items: center;
-            width: 90%;
-            margin: auto;
-            max-width: 22em;
-
-            position: relative;
-            padding: 15% 2em;
-            box-sizing: border-box;
-
-            $border: 5px;
-            color: #FFF;
-            background: rgba(0, 0, 0, 0.692);
-            background-clip: padding-box; /* importante */
-            border: solid $border transparent; /* importante */
-            border-radius: 2em;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0; right: 0; bottom: 0; left: 0;
-                z-index: -10;
-                margin: -$border; /* importante */
-                border-radius: inherit; /* importante */
-                background: linear-gradient(150deg, rgba(40,15,113,1) 0%, rgba(0,0,0,0) 44%, rgba(163, 42, 141, 0.664) 100%);
-            }
-
-            margin-left: 2rem;
-            margin-right: 2rem;
-            width: 20vw;
-            height: 520px;
-            .card-title{
-                color:$blanco;
-                font-size: 14px;
-            }
-            .card-text{
-                text-align: center;
-                color:$blanco;
-                font-size: 17px;
-            }
-            img{
-                width: 60px;
-            }
+        p{
+            font-size: 17px;
         }
     }
+    .customCard:hover{
+        background-image: url(../img/servicesHover.svg);
+    }
+
     .containerServicios__About{
         text-align: center;
         max-width: 900px;
