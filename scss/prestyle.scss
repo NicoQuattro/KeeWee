@@ -11,43 +11,68 @@ $azul: #280F71;
 $negro: #000000;
 $blanco: #ffffff;
 $footerColor: #dcecff;
-$negroTranslucido: #0000002c;
+$negroTranslucido: #000000a8;
 
 @mixin styleButton {
     border: 2px solid $magenta;
     color: $blanco;
+
 }
 @mixin styleButtonHover {
     background-color: $magenta;
     border: 2px solid $magenta;
 }
 
-.navbar{
-    position: fixed;
-    width: 100%;
-    height: 120px;
 
-    background-color: $negroTranslucido;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    .nav-item{
-        margin-right: 50px; 
-    }
-    .navLink:hover{
-        border-bottom: 3px solid $magenta;
-    }
-    .buttonContact{
-        @include styleButton();
-        width: 130px;  
-    }
-    .buttonContact:hover{
-        @include styleButtonHover()
-    }
-}
 
 .primerDegrade{
+    .navbar{
+        width: 100%;
+        height: 100px;
+    
+        background-color: $negroTranslucido;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        .nav-item{
+            margin-right: 50px; 
+        }
+        .navLink:hover{
+            border-bottom: 3px solid $magenta;
+        }
+        .buttonContact{
+            @include styleButton();
+            text-decoration: none;
+            width: 130px;  
+        }
+        .buttonContact:hover{
+            @include styleButtonHover()
+        }
+    }
     height: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, $violeta 48%, $magenta 100%);
+
+    .tittleContainer{ // utilizo flex para alinear el texto
+        color: $blanco;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+        width: 100vw;
+        h1{
+            font-size: 4.5vw;
+        }
+        h2{
+            font-size: 2vw;
+        }
+    
+    }
+    .swipeDown{
+        margin-left: 49vw;
+        font-size: 45px;
+        font-weight: bolder;
+        color: $blanco;
+    }
 }
 .segundoDegrade{
     background: linear-gradient(180deg, $magenta 0%, $violeta 80%, $azul 100%);
@@ -59,21 +84,7 @@ $negroTranslucido: #0000002c;
 body{
     z-index: -500;
 }
-.tittleContainer{ // utilizo flex para alinear el texto
-    color: $blanco;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    justify-content: center;
-    width: 100vw;
-    h1{
-        font-size: 4.5vw;
-    }
-    h2{
-        font-size: 2vw;
-    }
-}
+
 
 .containerServicios{
     display: flex;
@@ -85,14 +96,12 @@ body{
     margin-left: 15vw;
     margin-right: 15vw;
 
-    color: #000000;
-    position: relative;
-    z-index: -20;
 
     -webkit-box-shadow: 0px 0px 37px 15px rgba(0,0,0,0.49); 
     box-shadow: 0px 0px 37px 15px rgba(0,0,0,0.49);
     
     .containerServicios__Texto{
+        
         margin: 20px;
         color: $blanco;
         font-size: 16px;
@@ -166,7 +175,7 @@ body{
             padding-right: 40px;
             margin-top: 60px;
             text-align: left;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
@@ -176,15 +185,13 @@ body{
     height: 180px;
 }
 
-
-
 .containerContact{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 800px;
-    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.15);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(13,16,96,0.9920343137254902) 55%, $azul 100%);
     .containerContact__text{
         margin-top: 100px;
@@ -206,7 +213,8 @@ body{
     }
     form{
         margin-top: 60px;
-        width: 1200px;
+        max-width: 1200px;
+        width: 80vw;
     }
     input{
         color: $blanco;
@@ -272,3 +280,129 @@ body{
 
 }
 
+@media only screen and ( max-width: 765px){
+    .primerDegrade{
+        .navbar{
+            padding: 0;
+
+        }
+
+        .tittleContainer{
+            text-align: center;
+
+            h1{
+                font-size: 48px;
+                font-weight: 400;
+                max-width: 400px;
+            }
+            h2{
+                max-width: 300px;
+                margin-top: 56px;
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+
+    .containerServicios{   
+        padding-top: 40px;
+        height: 630px;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        .containerServicios__Texto{
+            margin-left: 10vw;
+            text-align: left;
+        }
+        .containerServicios__Cards{
+                height: 100vh;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                width: 100vw;
+
+                .containerServicios__CardsLeft{
+                    flex: 0 0 auto;
+                    display: inline-block;
+                    vertical-align: middle;
+                    display: flex; 
+                    align-items: center;
+                    flex-direction: row;
+                    margin: 0;
+                }
+                .containerServicios__CardsRight{
+                    flex: 0 0 auto;
+                    display: inline-block;
+                    vertical-align: middle;
+                    display: flex; 
+                    align-items: center;
+                    flex-direction: row;
+                    margin: 0;
+                }
+        }
+        .customCard{
+            height: 288px;
+            margin-right: 16px;
+            margin-left: 16px;
+            p{
+                max-width: 180px;
+            }
+        }
+
+        .containerServicios__About{
+                width: 350px;
+                text-align: left;
+                margin-left: 10vw;
+            h3{
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-weight: 300;
+                margin-top: 0;
+                margin-right: 10vw;
+                padding-right: 15px;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+
+
+    .containerContact{
+        justify-content: flex-end;
+        padding-bottom: 80px;
+        input{
+            height: 48px;
+        }
+        .buttonContact{
+            @include styleButtonHover();
+            margin-top: 30px;
+            width: 296px;  
+            height: 50px;
+        }
+    }
+
+
+
+
+    .footerContainer{
+        height: 790px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .footerContainer__Logotipo{
+            img{
+                height: 140px;
+            }
+        }
+    }
+    
+
+}

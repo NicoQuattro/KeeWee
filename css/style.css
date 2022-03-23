@@ -3,28 +3,44 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  height: 120px;
-  background-color: #0000002c;
-  padding-left: 10rem;
-  padding-right: 10rem; }
-  .navbar .nav-item {
-    margin-right: 50px; }
-  .navbar .navLink:hover {
-    border-bottom: 3px solid #a70080; }
-  .navbar .buttonContact {
-    border: 2px solid #a70080;
-    color: #ffffff;
-    width: 130px; }
-  .navbar .buttonContact:hover {
-    background-color: #a70080;
-    border: 2px solid #a70080; }
-
 .primerDegrade {
   height: 100%;
   background: linear-gradient(180deg, black 0%, #460265 48%, #a70080 100%); }
+  .primerDegrade .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #000000a8;
+    padding-left: 10rem;
+    padding-right: 10rem; }
+    .primerDegrade .navbar .nav-item {
+      margin-right: 50px; }
+    .primerDegrade .navbar .navLink:hover {
+      border-bottom: 3px solid #a70080; }
+    .primerDegrade .navbar .buttonContact {
+      border: 2px solid #a70080;
+      color: #ffffff;
+      text-decoration: none;
+      width: 130px; }
+    .primerDegrade .navbar .buttonContact:hover {
+      background-color: #a70080;
+      border: 2px solid #a70080; }
+  .primerDegrade .tittleContainer {
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    width: 100vw; }
+    .primerDegrade .tittleContainer h1 {
+      font-size: 4.5vw; }
+    .primerDegrade .tittleContainer h2 {
+      font-size: 2vw; }
+  .primerDegrade .swipeDown {
+    margin-left: 49vw;
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ffffff; }
 
 .segundoDegrade {
   background: linear-gradient(180deg, #a70080 0%, #460265 80%, #280F71 100%);
@@ -35,19 +51,6 @@
 body {
   z-index: -500; }
 
-.tittleContainer {
-  color: #ffffff;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  justify-content: center;
-  width: 100vw; }
-  .tittleContainer h1 {
-    font-size: 4.5vw; }
-  .tittleContainer h2 {
-    font-size: 2vw; }
-
 .containerServicios {
   display: flex;
   justify-content: space-around;
@@ -57,9 +60,6 @@ body {
   width: 70vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  color: #000000;
-  position: relative;
-  z-index: -20;
   -webkit-box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49); }
   .containerServicios .containerServicios__Texto {
@@ -117,7 +117,7 @@ body {
       padding-right: 40px;
       margin-top: 60px;
       text-align: left;
-      font-size: 18px; }
+      font-size: 16px; }
 
 .separador {
   width: 300px;
@@ -129,7 +129,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 800px;
-  background: black;
+  background: rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, black 0%, rgba(13, 16, 96, 0.992034) 55%, #280F71 100%); }
   .containerContact .containerContact__text {
     margin-top: 100px;
@@ -146,11 +146,12 @@ body {
     height: 200px; }
   .containerContact form {
     margin-top: 60px;
-    width: 1200px; }
+    max-width: 1200px;
+    width: 80vw; }
   .containerContact input {
     color: #ffffff;
-    background-color: #0000002c;
-    border: #0000002c;
+    background-color: #000000a8;
+    border: #000000a8;
     border-bottom: 4px solid #ffffff;
     border-radius: 10px 10px 0 0; }
   .containerContact input:hover {
@@ -192,3 +193,89 @@ body {
       font-weight: 500;
       font-style: normal;
       margin-left: 5px; }
+
+@media only screen and (max-width: 765px) {
+  .primerDegrade .navbar {
+    padding: 0; }
+  .primerDegrade .tittleContainer {
+    text-align: center; }
+    .primerDegrade .tittleContainer h1 {
+      font-size: 48px;
+      font-weight: 400;
+      max-width: 400px; }
+    .primerDegrade .tittleContainer h2 {
+      max-width: 300px;
+      margin-top: 56px;
+      font-size: 28px;
+      font-weight: 400; }
+  .containerServicios {
+    padding-top: 40px;
+    height: 630px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .containerServicios .containerServicios__Texto {
+      margin-left: 10vw;
+      text-align: left; }
+    .containerServicios .containerServicios__Cards {
+      height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      width: 100vw; }
+      .containerServicios .containerServicios__Cards .containerServicios__CardsLeft {
+        flex: 0 0 auto;
+        display: inline-block;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0; }
+      .containerServicios .containerServicios__Cards .containerServicios__CardsRight {
+        flex: 0 0 auto;
+        display: inline-block;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0; }
+    .containerServicios .customCard {
+      height: 288px;
+      margin-right: 16px;
+      margin-left: 16px; }
+      .containerServicios .customCard p {
+        max-width: 180px; }
+    .containerServicios .containerServicios__About {
+      width: 350px;
+      text-align: left;
+      margin-left: 10vw; }
+      .containerServicios .containerServicios__About h3 {
+        font-size: 36px;
+        margin-bottom: 30px; }
+      .containerServicios .containerServicios__About p {
+        font-weight: 300;
+        margin-top: 0;
+        margin-right: 10vw;
+        padding-right: 15px; }
+    .containerServicios img {
+      display: none; }
+  .containerContact {
+    justify-content: flex-end;
+    padding-bottom: 80px; }
+    .containerContact input {
+      height: 48px; }
+    .containerContact .buttonContact {
+      background-color: #a70080;
+      border: 2px solid #a70080;
+      margin-top: 30px;
+      width: 296px;
+      height: 50px; }
+  .footerContainer {
+    height: 790px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .footerContainer .footerContainer__Logotipo img {
+      height: 140px; } }

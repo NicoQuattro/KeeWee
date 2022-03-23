@@ -19,11 +19,11 @@
 <body>
     <div class="primerDegrade">
       <header>
-        <nav class="navbar navbar-expand-lg  navbar-dark d-flex">
+        <nav class="navbar fixed-top navbar-expand-lg  navbar-dark d-flex">
           <div class="container-fluid">
           <div>
             <a class="navbar-brand" href="index.html">
-              <img src="/img/logotipo.png"  height="150" alt="logo">
+              <img src="./img/logotipo.png"  height="110" alt="logo">
             </a>
           </div>
 
@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item navLink"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item navLink"><a class="nav-link" aria-current="page" href="#">Home</a></li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle navLink" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
@@ -44,8 +44,11 @@
                     <li><a class="dropdown-item" href="#">Branding</a></li>
                     <li><a class="dropdown-item" href="#">Social Media</a></li>
                     </ul>
-                  <li class="nav-item navLink"><a class="nav-link" href="#">About</a></li>
-                  <button class="btn btn-outline-success rounded-pill buttonContact" type="submit">Contact</button>
+                  <li class="nav-item navLink"><a class="nav-link" href="#about">About</a></li>
+
+ 
+
+                  <a href="#contact"><button class="btn btn-outline-success rounded-pill buttonContact" >Contact</button></a>
                   </ul>
             </div>
           </div>
@@ -53,9 +56,10 @@
         </nav> 
       </header>
       <div class="tittleContainer animate__animated animate__fadeIn">
-        <h1 class="tittle ">Web Development made easy</h1>
-        <h2 class="tittle ">lets build your new website experiencie.</h2>
+        <h1 class="tittle">Web Development made easy</h1>
+        <h2 class="tittle">Let's build your new website experience.</h2>
       </div>
+      <i class="swipeDown bi bi-chevron-down"></i>
     </div>
 
     <div class="segundoDegrade">
@@ -102,16 +106,13 @@
 
       </div>
       <div class="separador"></div>
-      <div class="containerServicios">
+      <div class="containerServicios" id="about">
         <img src="img/about.PNG" alt="">
         <div class="containerServicios__About">
           <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos fugit aperiam necessitatibus in earum sapiente dolore</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi pariatur, enim at asperiores recusandae consectetur rerum 
-            maxime perferendis commodi dolor atque, impedit consequuntur est unde saepe aspernatur libero, nam eaque.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi pariatur, enim at asperiores recusandae consectetur rerum 
-            maxime perferendis commodi dolor atque, impedit consequuntur est unde saepe aspernatur libero, nam eaque.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos fugit aperiam necessitatibus in earum sapiente dolore</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur.</p>
 
         </div>
       </div>
@@ -122,7 +123,7 @@
 
     
 
-    <div class="containerContact">
+    <div id="contact" class="containerContact">
       <div class="containerContact__text">
         <h3>Contact</h3>
         <p>get in touch with us</p>
@@ -130,14 +131,14 @@
 
       <form>
         <div class="row">
-          <div class="col">
+          <div class="col-md-6">
 
             <div class="form-group">
               <label for="formGroupExampleInput" class="containerContact__inputLabel">Name</label>
               <input type="text" class="form-control" id= name required>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6">
             <div class="form-group">
               <label for="exampleInputEmail1" class="containerContact__inputLabel">Email</label>
               <input type="email" class="form-control" id= email required>
