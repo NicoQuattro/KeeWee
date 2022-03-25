@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
 
+::-webkit-scrollbar {
+  display: none; }
+
 .primerDegrade {
   height: 100%;
   background: linear-gradient(180deg, black 0%, #460265 48%, #a70080 100%); }
@@ -45,11 +48,7 @@
 .segundoDegrade {
   background: linear-gradient(180deg, #a70080 0%, #460265 80%, #280F71 100%);
   position: relative;
-  z-index: -100;
   padding-bottom: 130px; }
-
-body {
-  z-index: -500; }
 
 .containerServicios {
   display: flex;
@@ -72,18 +71,21 @@ body {
       margin-bottom: 60px;
       font-size: 48px; }
   .containerServicios .containerServicios__Cards {
+    margin-left: 10vw;
     display: flex;
     flex-direction: row; }
     .containerServicios .containerServicios__Cards .containerServicios__CardsLeft {
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding-top: 180px;
       margin-right: 37px;
       margin-top: -48px; }
     .containerServicios .containerServicios__Cards .containerServicios__CardsRight {
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding-top: 180px;
       margin-right: 4vw;
       margin-top: 112px; }
   .containerServicios .customCard {
@@ -120,8 +122,7 @@ body {
       font-size: 16px; }
 
 .separador {
-  width: 300px;
-  height: 180px; }
+  padding-bottom: 180px; }
 
 .containerContact {
   display: flex;
@@ -210,32 +211,34 @@ body {
       font-weight: 400; }
   .containerServicios {
     padding-top: 40px;
-    height: 630px;
+    height: 810px;
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
     margin-left: 0;
     margin-right: 0; }
     .containerServicios .containerServicios__Texto {
-      margin-left: 10vw;
+      margin-left: 14vw;
       text-align: left; }
     .containerServicios .containerServicios__Cards {
-      height: 100vh;
+      margin: 0;
+      padding-left: 14vw;
+      height: auto;
       display: flex;
-      flex-wrap: nowrap;
-      overflow-x: scroll;
-      width: 100vw; }
+      white-space: nowrap;
+      overflow-x: auto;
+      width: 100%; }
       .containerServicios .containerServicios__Cards .containerServicios__CardsLeft {
-        flex: 0 0 auto;
-        display: inline-block;
+        height: auto;
+        display: inline;
         vertical-align: middle;
         display: flex;
         align-items: center;
         flex-direction: row;
         margin: 0; }
       .containerServicios .containerServicios__Cards .containerServicios__CardsRight {
-        flex: 0 0 auto;
-        display: inline-block;
+        height: auto;
+        display: inline;
         vertical-align: middle;
         display: flex;
         align-items: center;
@@ -244,7 +247,8 @@ body {
     .containerServicios .customCard {
       height: 288px;
       margin-right: 16px;
-      margin-left: 16px; }
+      margin-left: 16px;
+      white-space: normal; }
       .containerServicios .customCard p {
         max-width: 180px; }
     .containerServicios .containerServicios__About {

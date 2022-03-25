@@ -4,7 +4,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 $violeta: #460265;
 $magenta: #a70080;
 $azul: #280F71;
@@ -21,6 +20,10 @@ $negroTranslucido: #000000a8;
 @mixin styleButtonHover {
     background-color: $magenta;
     border: 2px solid $magenta;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -77,12 +80,7 @@ $negroTranslucido: #000000a8;
 .segundoDegrade{
     background: linear-gradient(180deg, $magenta 0%, $violeta 80%, $azul 100%);
     position: relative;
-     z-index: -100; 
      padding-bottom: 130px;
-}
-
-body{
-    z-index: -500;
 }
 
 
@@ -115,6 +113,7 @@ body{
     }
 
     .containerServicios__Cards{
+        margin-left: 10vw;
         display: flex;
         flex-direction: row;
 
@@ -122,6 +121,7 @@ body{
                 display: flex; 
                 align-items: center;
                 flex-direction: column;
+                padding-top: 180px;
                 margin-right: 37px;
                 margin-top: -48px;
             }
@@ -129,6 +129,7 @@ body{
                 display: flex; 
                 align-items: center;
                 flex-direction: column;
+                padding-top: 180px;
                 margin-right: 4vw;
                 margin-top: 112px;
             }
@@ -181,8 +182,7 @@ body{
 }
 
 .separador{
-    width: 300px;
-    height: 180px;
+    padding-bottom: 180px;
 }
 
 .containerContact{
@@ -284,7 +284,6 @@ body{
     .primerDegrade{
         .navbar{
             padding: 0;
-
         }
 
         .tittleContainer{
@@ -308,7 +307,7 @@ body{
 
     .containerServicios{   
         padding-top: 40px;
-        height: 630px;
+        height: 810px;
         justify-content: space-around;
         flex-direction: column;
         width: 100%;
@@ -316,19 +315,21 @@ body{
         margin-right: 0;
 
         .containerServicios__Texto{
-            margin-left: 10vw;
+            margin-left: 14vw;
             text-align: left;
         }
         .containerServicios__Cards{
-                height: 100vh;
+                margin: 0;
+                padding-left: 14vw;
+                height: auto;
                 display: flex;
-                flex-wrap: nowrap;
-                overflow-x: scroll;
-                width: 100vw;
+                white-space: nowrap;
+                overflow-x: auto;
+                width: 100%;
 
                 .containerServicios__CardsLeft{
-                    flex: 0 0 auto;
-                    display: inline-block;
+                    height: auto;
+                    display: inline;
                     vertical-align: middle;
                     display: flex; 
                     align-items: center;
@@ -336,8 +337,8 @@ body{
                     margin: 0;
                 }
                 .containerServicios__CardsRight{
-                    flex: 0 0 auto;
-                    display: inline-block;
+                    height: auto;
+                    display: inline;
                     vertical-align: middle;
                     display: flex; 
                     align-items: center;
@@ -349,6 +350,7 @@ body{
             height: 288px;
             margin-right: 16px;
             margin-left: 16px;
+            white-space: normal;
             p{
                 max-width: 180px;
             }
