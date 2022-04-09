@@ -6,11 +6,34 @@
 ::-webkit-scrollbar {
   display: none; }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent); }
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+a .asd {
+  position: absolute;
+  bottom: 2vmin;
+  right: 2vmin;
+  color: rgba(159, 159, 159, 0);
+  text-decoration: none; }
+
+a:hover {
+  color: #fff; }
+
 .primerDegrade {
   height: 100%;
   background: linear-gradient(180deg, black 0%, #460265 48%, #a70080 100%); }
+  .primerDegrade header {
+    height: 90px; }
   .primerDegrade .navbar {
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     background-color: #000000a8;
     padding-left: 2rem;
@@ -38,7 +61,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     justify-content: center;
     width: 100vw; }
     .primerDegrade .tittleContainer h1 {
@@ -46,14 +69,13 @@
     .primerDegrade .tittleContainer h2 {
       font-size: 2vw; }
   .primerDegrade .swipeDown {
-    margin-left: 49vw;
+    margin-left: 48.5vw;
     font-size: 45px;
     font-weight: bolder;
     color: #ffffff; }
 
 .segundoDegrade {
   background: linear-gradient(180deg, #a70080 0%, #460265 80%, #280F71 100%);
-  position: relative;
   padding-bottom: 130px; }
 
 .containerServicios {
@@ -62,9 +84,9 @@
   align-items: center;
   background-color: #000000c4;
   height: 928px;
-  width: 70vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
   -webkit-box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49); }
   .containerServicios .containerServicios__Texto {
@@ -201,8 +223,17 @@
       font-style: normal;
       margin-left: 5px; }
 
+@media only screen and (max-width: 1440px) {
+  .containerServicios {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw; } }
+
 @media only screen and (max-width: 765px) {
   .primerDegrade .navbar {
+    background-color: black;
+    padding-top: 0;
+    padding-bottom: 0;
     height: auto; }
     .primerDegrade .navbar .nav-item {
       margin-right: 0;
@@ -220,9 +251,8 @@
   .primerDegrade .tittleContainer {
     text-align: center; }
     .primerDegrade .tittleContainer h1 {
-      font-size: 48px;
-      font-weight: 400;
-      max-width: 400px; }
+      font-size: 12vw;
+      font-weight: 400; }
     .primerDegrade .tittleContainer h2 {
       max-width: 300px;
       margin-top: 56px;
@@ -264,7 +294,6 @@
         flex-direction: row;
         margin: 0; }
     .containerServicios .customCard {
-      height: 288px;
       margin-right: 16px;
       margin-left: 16px;
       white-space: normal; }
@@ -282,7 +311,7 @@
         margin-top: 0;
         margin-right: 10vw;
         padding-right: 15px; }
-    .containerServicios img {
+    .containerServicios .imgAbout {
       display: none; }
   .containerContact {
     justify-content: flex-end;

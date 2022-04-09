@@ -1,6 +1,10 @@
 @media only screen and ( max-width: 765px){
     .primerDegrade{
         .navbar{
+            background-color: black;  // una solucion en lugar de cambiar la opacidad del navbar 
+            padding-top: 0;
+            padding-bottom: 0;
+            
             height: auto;
             .nav-item{
                 margin-right: 0; 
@@ -27,9 +31,8 @@
             text-align: center;
 
             h1{
-                font-size: 48px;
+                font-size: 12vw;
                 font-weight: 400;
-                max-width: 400px;
             }
             h2{
                 max-width: 300px;
@@ -84,7 +87,6 @@
                 }
         }
         .customCard{
-            height: 288px;
             margin-right: 16px;
             margin-left: 16px;
             white-space: normal;
@@ -108,7 +110,7 @@
                 padding-right: 15px;
             }
         }
-        img{
+        .imgAbout{
             display: none;
         }
     }
