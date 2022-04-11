@@ -566,22 +566,56 @@ a:hover {
   }
 }
 
-.primerDegrade .tittleContainer1 {
+.webDegrade {
+  height: 100%;
+  background: linear-gradient(243.18deg, #952AA3 0%, rgba(90, 26, 120, 0) 19.27%, rgba(81, 24, 118, 0) 78.12%, #250E69 100%);
+}
+
+.webDegrade header {
+  height: 90px;
+}
+
+.webDegrade .navbar {
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000a8;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.webDegrade .navbar .nav-item {
+  margin-right: 50px;
+}
+
+.webDegrade .navbar .navLink:hover {
+  border-bottom: 3px solid #a70080;
+}
+
+.webDegrade .navbar .buttonContact {
+  border: 2px solid #a70080;
   color: #ffffff;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 80vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 45%;
+  text-decoration: none;
+  width: 130px;
+}
+
+.webDegrade .navbar .buttonContact:hover {
+  background-color: #a70080;
+  border: 2px solid #a70080;
+}
+
+.webDegrade .navbar .navbar-collapse {
+  -webkit-box-flex: inherit;
+      -ms-flex-positive: inherit;
+          flex-grow: inherit;
+}
+
+.webDegrade .navbar .navbar-brand {
+  padding: 0;
+}
+
+.webDegrade .navbar .dropdown-menu-dark {
+  background-color: #000000;
 }
 /*# sourceMappingURL=prestyle.css.map */
