@@ -83,6 +83,17 @@ $negroTranslucido: #000000a8;
         }
     
     }
+    .tittleContainer1 {
+        color: #ffffff;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        width: 45%;
+        margin-right: 15px;
+    }
+    
     .swipeDown{
         margin-left: 48.5vw;
         font-size: 45px;
@@ -289,5 +300,18 @@ $negroTranslucido: #000000a8;
 
 }
 
+
 @import "./partials/laptop";
 @import "./partials/mobile";
+
+
+
+.primerDegrade .tittleContainer1 {
+    color: #ffffff;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    width: 45%;
+}
