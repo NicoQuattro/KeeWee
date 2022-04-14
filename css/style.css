@@ -27,6 +27,14 @@ a .asd {
 a:hover {
   color: #fff; }
 
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out; }
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out; }
+
 .primerDegrade {
   height: 100%;
   background: linear-gradient(180deg, black 0%, #460265 48%, #a70080 100%); }
@@ -68,6 +76,15 @@ a:hover {
       font-size: 4.5vw; }
     .primerDegrade .tittleContainer h2 {
       font-size: 2vw; }
+  .primerDegrade .tittleContainer1 {
+    color: #ffffff;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    width: 45%;
+    margin-right: 15px; }
   .primerDegrade .swipeDown {
     margin-left: 48.5vw;
     font-size: 45px;
@@ -84,9 +101,9 @@ a:hover {
   align-items: center;
   background-color: #000000c4;
   height: 928px;
-  width: 60vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   -webkit-box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49);
   box-shadow: 0px 0px 37px 15px rgba(0, 0, 0, 0.49); }
   .containerServicios .containerServicios__Texto {
@@ -99,7 +116,6 @@ a:hover {
       margin-bottom: 60px;
       font-size: 48px; }
   .containerServicios .containerServicios__Cards {
-    margin-left: 10vw;
     display: flex;
     flex-direction: row; }
     .containerServicios .containerServicios__Cards .containerServicios__CardsLeft {
@@ -117,10 +133,10 @@ a:hover {
       margin-right: 4vw;
       margin-top: 112px; }
   .containerServicios .customCard {
-    background-image: url(../img/services.svg);
+    background-image: url(../img/cards/card.svg);
     backdrop-filter: blur(8px);
     width: 270px;
-    height: 416px;
+    height: 288px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -135,7 +151,7 @@ a:hover {
     .containerServicios .customCard p {
       font-size: 17px; }
   .containerServicios .customCard:hover {
-    background-image: url(../img/servicesHover.svg); }
+    background-image: url(../img/cards/cardHover.svg); }
   .containerServicios .containerServicios__About {
     text-align: center;
     max-width: 900px;
