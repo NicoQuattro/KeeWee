@@ -4,8 +4,9 @@
             background-color: black;  // una solucion en lugar de cambiar la opacidad del navbar 
             padding-top: 0;
             padding-bottom: 0;
+
             
-            height: auto;
+            
             .nav-item{
                 margin-right: 0; 
                 margin-top: 10px;
@@ -45,10 +46,24 @@
     }
 
 
-    .containerServicios{   
+    .segundoDegrade{
+        padding: 0;
+    }
+    .separador{
+        padding: 0;
+    }
+
+    .containerServicios{  
+        //sin el background
+ 
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0);
+        
+
+
         padding-top: 40px;
-        height: 810px;
-        justify-content: space-around;
+        height: 780px;
+        justify-content: flex-start;
         flex-direction: column;
         width: 100%;
         margin-left: 0;
@@ -68,6 +83,7 @@
                 width: 100%;
 
                 .containerServicios__CardsLeft{
+                    padding-top: 0px;
                     height: auto;
                     display: inline;
                     vertical-align: middle;
@@ -77,6 +93,7 @@
                     margin: 0;
                 }
                 .containerServicios__CardsRight{
+                    padding-top: 0px;
                     height: auto;
                     display: inline;
                     vertical-align: middle;
