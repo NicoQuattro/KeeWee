@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
 <body>
   <div class="primerDegrade">
@@ -49,29 +50,37 @@
               </div>
       </nav> 
     </header>
-    <div class="tittleContainer animate__animated animate__fadeIn">
+    <div class="tittleContainer animate__animated animate__fadeInDown">
       <h1 class="tittle">Web Development made easy</h1>
       <h2 class="tittle">Let's build your new website experience.</h2>
     </div>
-    <a href="#services"><i class=" swipeDown bi bi-chevron-down"></i> </a>
+
+    <div class="bounce arrow-bounce ">
+      <a href="#services"><i class="swipeDown bi bi-chevron-down"></i></a>
+    </div>
   </div>
 
   <div class="segundoDegrade">
     <div class="separador"></div>
     <div class="containerServicios" id="services">
-      <div class="containerServicios__Texto">
+      <div class="containerServicios__Texto" data-aos="fade-in" data-aos-duration="600">
         <h3>Services</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit sit accusantium soluta deleniti? Ipsa eveniet in quia doloribus odit assumenda aut ratione ab?</p>
-      </div>
+      </div> 
+
+
+
+
+
 
       <div class="containerServicios__Cards separador">
         <div class="containerServicios__CardsLeft">
-          <div class="customCard">
+          <div class="customCard" data-aos="fade-up" data-aos-duration="1000">
             <img src="img/icons/webDevelopment.svg"alt="icon web Development">
             <h5 class="customCard__Tittle">WEB DEVELOPMENT</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
-          <div class="customCard">
+          <div class="customCard"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <img src="img/icons/mobileApps.svg"alt="icon web Development">
             <h5 class="customCard__Tittle">MOBILE APPS</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -79,34 +88,30 @@
         </div>
 
         <div class="containerServicios__CardsRight">
-          <div class="customCard">
+          <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" >
             <img src="img/icons/branding.svg" alt="icon web Development">
             <h5 class="customCard__Tittle">BRANDING</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
-          <div class="customCard">
+          <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
             <img src="img/icons/socialMedia.svg"alt="icon web Development">
             <h5 class="customCard__Tittle">SOCIAL MEDIA</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
       </div>
-  
+</div>
 
-      
-
-
-
-
-    </div>
     <div class="separador"></div>
     <div class="containerServicios" id="about">
-      <img class="imgAbout" src="img/about.PNG" alt="">
-      <div class="containerServicios__About">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur.</p>
+      <img class="imgAbout" data-aos="fade-in" data-aos-duration="500" src="img/about.PNG" alt="">
+      <div class="containerServicios__About" >
+        <h3 data-aos="fade-up">About Us</h3>
+        <div data-aos="fade-up" data-aos-delay="150">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur.</p>  
+        </div>
 
       </div>
     </div>
@@ -196,5 +201,8 @@
   <script src="./js/navbarHide.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

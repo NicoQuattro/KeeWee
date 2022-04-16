@@ -26,7 +26,7 @@ $negroTranslucido: #000000a8;
     display: none; // oculta la barra de scroll
 }
 
-@import "./partials/stars";
+@import "./partials/components/stars";
 
 
 .primerDegrade{
@@ -98,10 +98,9 @@ $negroTranslucido: #000000a8;
         width: 45%;
         margin-right: 15px;
     }
-    
+    @import "./partials/components/chevron";
     .swipeDown{
-        margin-left: 48.5vw;
-        font-size: 45px;
+        font-size: 60px;
         font-weight: bolder;
         color: $blanco;
     }
@@ -302,6 +301,12 @@ $negroTranslucido: #000000a8;
         }
     }
 
+}
+
+.contenedour{
+    width: 200px;
+    height: 100px;
+    background-color: white
 }
 
 @import "./partials/laptop";
