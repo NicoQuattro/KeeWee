@@ -87,7 +87,7 @@ a:hover {
     text-align: center; }
   .primerDegrade .bounce {
     -webkit-animation: bounce 2s 10;
-    animation: bounce 2s 9999; }
+    animation: bounce 2s 999999999999999; }
 
 @-webkit-keyframes bounce {
   0%,
@@ -270,11 +270,40 @@ a:hover {
       font-weight: 500;
       font-style: normal;
       margin-left: 5px; }
+    .footerContainer .footerContainer__Items .itemsRedes .nav-link {
+      padding-left: 0;
+      padding-right: 0; }
 
-.contenedour {
-  width: 200px;
-  height: 100px;
-  background-color: white; }
+.servicesDegrade .primerDegrade {
+  background: none;
+  background: #652fff;
+  background: linear-gradient(45deg, #652fff 0%, black 14%, black 79%, #c634ab 100%); }
+  .servicesDegrade .primerDegrade .containerServices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; }
+    .servicesDegrade .primerDegrade .containerServices .containerServices__text {
+      margin-right: 10vw;
+      width: 400px;
+      color: white; }
+      .servicesDegrade .primerDegrade .containerServices .containerServices__text h3 {
+        font-size: 48px;
+        margin-bottom: 56px; }
+      .servicesDegrade .primerDegrade .containerServices .containerServices__text p {
+        margin-bottom: 33px; }
+      .servicesDegrade .primerDegrade .containerServices .containerServices__text .buttonContact {
+        border: 2px solid #a70080;
+        color: #ffffff;
+        text-decoration: none;
+        width: 130px; }
+      .servicesDegrade .primerDegrade .containerServices .containerServices__text .buttonContact:hover {
+        background-color: #a70080;
+        border: 2px solid #a70080; }
+    .servicesDegrade .primerDegrade .containerServices .containerServices__img {
+      width: 270px;
+      height: 640px; }
 
 @media only screen and (max-width: 1440px) {
   .containerServicios {
@@ -388,4 +417,8 @@ a:hover {
     align-items: center;
     text-align: center; }
     .footerContainer .footerContainer__Logotipo img {
-      height: 140px; } }
+      height: 140px; }
+  .servicesDegrade .containerServices {
+    margin-left: 20px; }
+    .servicesDegrade .containerServices img {
+      display: none; } }

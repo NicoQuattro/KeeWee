@@ -30,6 +30,8 @@ $negroTranslucido: #000000a8;
 
 
 .primerDegrade{
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, $violeta 48%, $magenta 100%);
     header{
         height: 90px;
             .scrolled-down{
@@ -69,9 +71,6 @@ $negroTranslucido: #000000a8;
             background-color: $negro;
         }
     }
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, $violeta 48%, $magenta 100%);
-
     .tittleContainer{ // utilizo flex para alinear el texto
         color: $blanco;
         align-items: center;
@@ -106,7 +105,6 @@ $negroTranslucido: #000000a8;
     }
 }
 .segundoDegrade{
-
     background: linear-gradient(180deg, $magenta 0%, $violeta 80%, $azul 100%);
      padding-bottom: 130px;
 }
@@ -298,16 +296,59 @@ $negroTranslucido: #000000a8;
                 font-style: normal;
                 margin-left: 5px;
             }
+            .nav-link{
+                padding-left: 0;
+                padding-right: 0;
+
+            }
         }
     }
 
 }
 
-.contenedour{
-    width: 200px;
-    height: 100px;
-    background-color: white
+// 🡣 services pages 🡣 //
+.servicesDegrade{
+    .primerDegrade{
+        background: none; //dehabilito el fondo del primer degrade para que no se superponga
+        background: rgb(101,47,255);
+        background: linear-gradient(45deg, rgba(101,47,255,1) 0%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 79%, rgba(198,52,171,1) 100%);
+    
+        .containerServices{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            .containerServices__text{
+                h3{
+                    font-size: 48px;
+                    margin-bottom: 56px;
+                }
+                p{
+                    margin-bottom: 33px;
+                }
+                margin-right: 10vw;
+                width: 400px;
+                color: white;
+                .buttonContact{
+                    @include styleButton();
+                    text-decoration: none;
+                    width: 130px;  
+                }
+                .buttonContact:hover{
+                    @include styleButtonHover();
+                }
+            }
+    
+            .containerServices__img{
+                width: 270px;
+                height: 640px;
+                //filter: drop-shadow(6px 6px 17px rgba(0, 0, 0, 0.555)); esto es para que tenga sombra la img
+            }
+        }
+    }
 }
+
 
 @import "./partials/laptop";
 @import "./partials/mobile";
