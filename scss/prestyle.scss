@@ -154,8 +154,10 @@ $negroTranslucido: #000000a8;
                 margin-right: 4vw;
                 margin-top: 112px;
             }
+            a{
+                text-decoration: none;
+            }
     }
-
 
     .customCard{
         background-image: url(../img/cards/card.svg);
@@ -312,13 +314,15 @@ $negroTranslucido: #000000a8;
         background: none; //dehabilito el fondo del primer degrade para que no se superponga
         background: rgb(101,47,255);
         background: linear-gradient(45deg, rgba(101,47,255,1) 0%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 79%, rgba(198,52,171,1) 100%);
-    
+
         .containerServices{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            height: 90vh;
+            height: 95vh;
+            padding-bottom: 70px;
+            padding-top: 50px;
             .containerServices__text{
                 h3{
                     font-size: 48px;

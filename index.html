@@ -57,7 +57,7 @@
   </div>
 
   <div class="segundoDegrade">
-    <div class="separador"></div>
+    <div class="separador" ></div>
     <div class="containerServicios" id="services">
       <div class="containerServicios__Texto" data-aos="fade-in" data-aos-duration="600">
         <h3>Services</h3>
@@ -71,30 +71,38 @@
 
       <div class="containerServicios__Cards separador">
         <div class="containerServicios__CardsLeft">
-          <div class="customCard" data-aos="fade-up" data-aos-duration="1000">
-            <img src="img/icons/webDevelopment.svg"alt="icon web Development">
-            <h5 class="customCard__Tittle">WEB DEVELOPMENT</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="customCard"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <img src="img/icons/mobileApps.svg"alt="icon web Development">
-            <h5 class="customCard__Tittle">MOBILE APPS</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+          <a href="./pages/web.html">
+            <div class="customCard" data-aos="fade-up" data-aos-duration="1000">
+              <img src="img/icons/webDevelopment.svg"alt="icon web Development">
+              <h5 class="customCard__Tittle">WEB DEVELOPMENT</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </a>
+          <a href="./pages/mobile.html">
+            <div class="customCard"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <img src="img/icons/mobileApps.svg"alt="icon web Development">
+              <h5 class="customCard__Tittle">MOBILE APPS</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </a>
         </div>
 
         <div class="containerServicios__CardsRight">
-          <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" >
-            <img src="img/icons/branding.svg" alt="icon web Development">
-            <h5 class="customCard__Tittle">BRANDING</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
-            <img src="img/icons/socialMedia.svg"alt="icon web Development">
-            <h5 class="customCard__Tittle">SOCIAL MEDIA</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
+          <a href="./pages/branding.html">
+            <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" >
+              <img src="img/icons/branding.svg" alt="icon web Development">
+              <h5 class="customCard__Tittle">BRANDING</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </a>
+          <a href="./pages/socialMedia.html">
+            <div class="customCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
+              <img src="img/icons/socialMedia.svg"alt="icon web Development">
+              <h5 class="customCard__Tittle">SOCIAL MEDIA</h5>
+              <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </div>
+          </a>
       </div>
 </div>
 
@@ -121,7 +129,7 @@
   <div id="contact" class="containerContact">
     <div class="containerContact__text">
       <h3>Contact</h3>
-      <p>get in touch with us</p>
+      <p class="tittleContainer">get in touch with us</p>
     </div>
 
     <form>
@@ -130,25 +138,25 @@
 
           <div class="form-group">
             <label for="formGroupExampleInput" class="containerContact__inputLabel">Name</label>
-            <input type="text" class="form-control" id= name required>
+            <input type="text" name="name" class="form-control" id="name" required>
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
             <label for="exampleInputEmail1" class="containerContact__inputLabel">Email</label>
-            <input type="email" class="form-control" id= email required>
+            <input type="email" name="mail" class="form-control" id="email" required>
           </div>
         </div>
       </div>
       <div class="">
         <div class="form-group">
           <label for="formGroupExampleInput" class="containerContact__inputLabel">Tell us about your project...</label>
-          <input type="text" class="form-control containerContact__textArea" required></input>
+          <input type="text" name="message" class="form-control containerContact__textArea" required></input>
         </div>
       </div>
     </form>
 
-    <button class="btn btn-outline-success rounded-pill buttonContact">Send</button>
+    <button typer="submit" class="btn btn-outline-success rounded-pill buttonContact">Send</button>
   </div>
 
   <footer>
